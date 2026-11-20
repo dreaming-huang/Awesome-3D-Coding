@@ -33,6 +33,7 @@ Papers, benchmarks, and datasets on generating 3D content as editable code, from
 - [Tools](#development-tools)
 - [Related Collections](#related-collections)
 - [Contributing](#contributing)
+- [Citation](#citation)
 
 </details>
 
@@ -247,3 +248,18 @@ Dates refer to the linked scoring implementation or evaluation protocol.
 Papers, datasets, tools, and corrections are welcome. See [How to open a pull request](how-to-PR.md) for entry formats and a worked example.
 
 This collection is available under the [MIT License](LICENSE). Linked papers, datasets, and software carry their own terms.
+
+<a name="citation"></a>
+
+## 🔖 Citation
+
+If you use this collection in your research, you can cite it with the BibTeX entry below or import the [citation file](CITATION.cff).
+
+```bibtex
+@misc{awesome3dcoding2026,
+  author = {{Awesome-3D-Coding contributors}},
+  title  = {{Awesome-3D-Coding}},
+  year   = {2026},
+  url    = {https://github.com/jweihe/Awesome-3D-Coding}
+}
+```
