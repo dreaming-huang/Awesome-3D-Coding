@@ -5,33 +5,32 @@ Papers, benchmarks, and datasets on generating 3D content as editable code, from
 <p align="left">
   <a href="#3d-coding-benchmarks"><img src="assets/nav-benchmarks.svg" alt="Benchmarks" height="30"></a>
   <a href="#datasets-for-3d-code"><img src="assets/nav-datasets.svg" alt="Datasets" height="30"></a>
-  <a href="#models-for-3d-code-generation"><img src="assets/nav-models.svg" alt="Models" height="30"></a>
-  <a href="#3d-modeling-agents"><img src="assets/nav-agents.svg" alt="Agents" height="30"></a>
+  <a href="#models-for-3d-code-generation"><img src="assets/nav-models.svg" alt="Methods" height="30"></a>
+  <a href="#3d-modeling-agents"><img src="assets/nav-agents.svg" alt="Systems" height="30"></a>
   <a href="#evaluation-metrics"><img src="assets/nav-metrics.svg" alt="Metrics" height="30"></a>
 </p>
 
 <details open>
 <summary><strong>🧭 Browse the full collection</strong></summary>
 
-- [3D Coding Benchmarks](#3d-coding-benchmarks)
+- [Benchmarks](#3d-coding-benchmarks)
   - [Asset Creation and Editing](#asset-creation-and-editing)
   - [Parametric CAD and Assembly](#parametric-cad-and-assembly)
   - [Interactive Worlds](#interactive-worlds)
-- [Datasets for 3D Code](#datasets-for-3d-code)
-  - [Procedural Assets and Scene Programs](#procedural-assets-and-scene-programs)
-  - [Parametric CAD Programs](#parametric-cad-programs)
-- [Models for 3D Code Generation](#models-for-3d-code-generation)
+- [Datasets](#datasets-for-3d-code)
+  - [Assets and Scenes](#assets-and-scenes)
+  - [CAD Programs](#cad-programs)
+- [Methods and Representations](#models-for-3d-code-generation)
   - [Text to CAD](#text-to-cad)
   - [Shape to Code](#shape-to-code)
-  - [Images and Drawings to Programs](#images-and-drawings-to-programs)
+  - [Images and Drawings to Code](#images-and-drawings-to-code)
   - [Shape Program Synthesis](#shape-program-synthesis)
-- [3D Modeling Agents](#3d-modeling-agents)
+- [Modeling Systems](#3d-modeling-agents)
   - [Objects and Articulation](#objects-and-articulation)
   - [Scene Layout and Generation](#scene-layout-and-generation)
-  - [Visual Editing and Inverse Graphics](#visual-editing-and-inverse-graphics)
-- [Human–AI Co-Creation](#human-ai-co-creation)
+  - [Editing and Reconstruction](#editing-and-reconstruction)
 - [Evaluation Metrics](#evaluation-metrics)
-- [Development Tools](#development-tools)
+- [Tools](#development-tools)
 - [Related Collections](#related-collections)
 - [Contributing](#contributing)
 
@@ -39,7 +38,7 @@ Papers, benchmarks, and datasets on generating 3D content as editable code, from
 
 <a name="3d-coding-benchmarks"></a>
 
-## 📏 3D Coding Benchmarks
+## 📏 Benchmarks
 
 *Release date* links to the source for each month. Research papers use the first arXiv submission or the publisher’s online date. Code-only projects and datasets use a documented release or data upload.
 
@@ -80,9 +79,11 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 
 <a name="datasets-for-3d-code"></a>
 
-## 🗂️ Datasets for 3D Code
+## 🗂️ Datasets
 
-### Procedural Assets and Scene Programs
+<a name="procedural-assets-and-scene-programs"></a>
+
+### Assets and Scenes
 
 | Dataset | Release date | Reported scale | What a sample contains | Resources |
 | --- | --- | --- | --- | --- |
@@ -93,7 +94,9 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 | **ShapeAssembly programs** | [2020-09](https://github.com/rkjones4/ShapeAssembly/blob/3e2152e2c629818fa03223a1dc219518b54b5dd7/README.md) | 3 released furniture categories | A PartNet-derived chair, table, or storage design encoded as a hierarchy of cuboids and attachment operations. The release includes parsed programs and their interpreter. | [Code](https://github.com/rkjones4/ShapeAssembly) · [Paper](https://arxiv.org/abs/2009.08026) |
 | **VLMaterial** | [2025-02](https://github.com/mit-gfx/VLMaterial/blob/5193dadfdd3d2e9e08f8ad8d970bc7538b2ee3f0/README.md) | 1,640 seed materials, over 550,000 after augmentation | A procedural Blender material encoded as Python and paired with a render. The authors vary both shader graph structure and node parameters. | [Code](https://github.com/mit-gfx/VLMaterial) · [Paper](https://arxiv.org/abs/2501.18623) |
 
-### Parametric CAD Programs
+<a name="parametric-cad-programs"></a>
+
+### CAD Programs
 
 | Dataset | Release date | Reported scale | What a sample contains | Resources |
 | --- | --- | --- | --- | --- |
@@ -109,7 +112,7 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 
 <a name="models-for-3d-code-generation"></a>
 
-## 🧊 Models for 3D Code Generation
+## 🧊 Methods and Representations
 
 ### Text to CAD
 
@@ -128,7 +131,9 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 | **MeshCoder** | [2025-08](https://arxiv.org/abs/2508.14879v1) | NeurIPS 2025 | Point cloud → Blender Python | Represents a mesh as a program organized by part, so a user can modify one component of the reconstruction. | [Paper](https://arxiv.org/abs/2508.14879) · [Code](https://github.com/InternRobotics/MeshCoder) · [Project](https://daibingquan.github.io/MeshCoder/) |
 | **cadrille** | [2025-05](https://arxiv.org/abs/2505.22914v1) | ICLR 2026 | Point cloud, image, or text → CAD code | Trains one model across all three input modalities and refines it using feedback from program execution. | [Paper](https://arxiv.org/abs/2505.22914) · [Code](https://github.com/col14m/cadrille) |
 
-### Images and Drawings to Programs
+<a name="images-and-drawings-to-programs"></a>
+
+### Images and Drawings to Code
 
 | Method | Release date | Publication | Input → program | Highlight | Resources |
 | --- | --- | --- | --- | --- | --- |
@@ -149,11 +154,11 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 
 <a name="3d-modeling-agents"></a>
 
-## 🤖 3D Modeling Agents
+## 🤖 Modeling Systems
 
 ### Objects and Articulation
 
-| System | Release date | Publication | Runtime | How the agent builds or revises a scene | Resources |
+| System | Release date | Publication | Runtime | How it builds or edits 3D content | Resources |
 | --- | --- | --- | --- | --- | --- |
 | **LL3M** | [2025-08](https://arxiv.org/abs/2508.08228v1) | arXiv 2025 | Blender | Writes and debugs scripts for geometry and materials. Rendered views and follow-up instructions guide subsequent edits. | [Paper](https://arxiv.org/abs/2508.08228) · [Gallery](https://threedle.github.io/ll3m/) |
 | **3DCodeVerse** | [2026-10](https://arxiv.org/abs/2610.22341v1) | arXiv 2026 | Blender, CAD, and web graphics | Runs the generated program, measures the resulting asset, and inspects renders to identify which part of the program to revise. | [Paper](https://arxiv.org/abs/2610.22341) · [Code](https://github.com/gaoypeng/3dcodeverse) |
@@ -163,7 +168,7 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 
 ### Scene Layout and Generation
 
-| System | Release date | Publication | Runtime | How the agent builds or revises a scene | Resources |
+| System | Release date | Publication | Runtime | How it builds or edits 3D content | Resources |
 | --- | --- | --- | --- | --- | --- |
 | **SceneCraft** | [2024-03](https://arxiv.org/abs/2403.01248v1) | ICML 2024 | Blender | Assembles assets from a scene description, checks their spatial relationships, and reuses placement functions across scenes. | [Paper](https://proceedings.mlr.press/v235/hu24g.html) |
 | **Open-Universe Indoor Scene Generation** | [2024-02](https://arxiv.org/abs/2403.09675v1) | arXiv 2024 | Layout DSL + constraint solver | Compiles language into spatial constraints, solves for object poses, and retrieves meshes to populate the layout. | [Paper](https://arxiv.org/abs/2403.09675) |
@@ -172,23 +177,17 @@ Compare a Blender asset against reference views, test a CAD solid against its de
 | **Procedural Scene Programs** | [2025-10](https://arxiv.org/abs/2510.16147v1) | SIGGRAPH Asia 2025 | Imperative layout programs | Places each object relative to earlier objects. A program search corrects invalid layouts while preserving the proposed arrangement. | [Paper](https://arxiv.org/abs/2510.16147) |
 | **SceneCode** | [2026-05](https://arxiv.org/abs/2605.19587v1) | arXiv 2026 | Blender Python → simulation assets | Turns a room brief into object requests, generates part-level programs, and assembles the results into an editable scene with articulated objects. | [Paper](https://arxiv.org/abs/2605.19587) |
 
-### Visual Editing and Inverse Graphics
+<a name="visual-editing-and-inverse-graphics"></a>
+<a name="human-ai-co-creation"></a>
 
-| System | Release date | Publication | Runtime | How the agent builds or revises a scene | Resources |
+### Editing and Reconstruction
+
+| System | Release date | Publication | Runtime | How it builds or edits 3D content | Resources |
 | --- | --- | --- | --- | --- | --- |
 | **BlenderAlchemy** | [2024-04](https://arxiv.org/abs/2404.17672v1) | ECCV 2024 | Blender | Proposes program edits and evaluates the renders against the visual goal. The examples show how changes to procedural materials affect a scene. | [Paper](https://arxiv.org/abs/2404.17672) · [Code](https://github.com/ianhuang0630/BlenderAlchemyOfficial) |
 | **VIGA** | [2026-01](https://arxiv.org/abs/2601.11109v1) | arXiv 2026 | Blender Python | Alternates between writing code, rendering a scene, and inspecting differences from the target to guide the next edit. | [Paper](https://arxiv.org/abs/2601.11109) · [Code](https://github.com/Fugtemypt123/VIGA) |
 | **Thinking in Blender (SEIG)** | [2026-06](https://arxiv.org/abs/2606.02580v1) | arXiv 2026 | Blender | Reconstructs one image as an editable scene by refining geometry, materials, composition, and lighting in stages. | [Paper](https://arxiv.org/abs/2606.02580) |
-
-<a name="human-ai-co-creation"></a>
-
-## 🤝 Human–AI Co-Creation
-
-Interactive systems that let designers inspect and edit the structure of a generated 3D model.
-
-| System | Release date | Publication | Editable representation | How designers edit | Resources |
-| --- | --- | --- | --- | --- | --- |
-| **Treellis** | [2026-11](https://doi.org/10.1145/3830398.3830694) | UIST 2026 · Best Paper | Assembly tree of parts, operations, and repeats | Select a part in the tree or viewport, adjust its parameters with sliders, or ask the AI to revise just that subtree. | [Paper](https://doi.org/10.1145/3830398.3830694) · [Project](https://www.aid-lab.org/treellis) · [Demo](https://www.treellis.art/) |
+| **Treellis** | [2026-11](https://doi.org/10.1145/3830398.3830694) | UIST 2026 · Best Paper | Browser | Generates an editable assembly tree of parts, operations, and repeats. Designers can adjust part parameters directly or prompt the AI to revise a selected subtree. | [Paper](https://doi.org/10.1145/3830398.3830694) · [Project](https://www.aid-lab.org/treellis) · [Demo](https://www.treellis.art/) |
 
 <a name="evaluation-metrics"></a>
 
@@ -206,7 +205,7 @@ Dates refer to the linked scoring implementation or evaluation protocol.
 
 <a name="development-tools"></a>
 
-## 🛠️ Development Tools
+## 🛠️ Tools
 
 | Tool | Release date | Description | Resources |
 | --- | --- | --- | --- |
@@ -227,4 +226,4 @@ Dates refer to the linked scoring implementation or evaluation protocol.
 
 ## 🤝 Contributing
 
-Add a row under the task your resource addresses and link to a primary source. For a method, identify the program it writes. For a benchmark, describe what gets checked after execution. For a dataset, give the counting unit and describe one sample. Link the release month to a dated primary source. For co-creation systems, describe the structure a designer can edit.
+Add a row under the task your resource addresses and link to a primary source. For a method, identify the program it writes. For a benchmark, describe what gets checked after execution. For a dataset, give the counting unit and describe one sample. Link the release month to a dated primary source. For interactive systems, describe what a designer can inspect or edit.
