@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="30" viewBox="0 0 120 30" role="img" aria-label="Benchmarks">
+  <rect x="0.5" y="0.5" width="119" height="29" rx="8" fill="#dcece3" stroke="#185448" stroke-opacity=".17"/>
+  <g transform="translate(9 6)" fill="none" stroke="#185448" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15h16M4 12V8m5 4V4m5 8V1"/></g>
+  <text x="34" y="19.6" fill="#185448" font-family="Arial,Helvetica,sans-serif" font-size="14" font-weight="600">Benchmarks</text>
+</svg>
