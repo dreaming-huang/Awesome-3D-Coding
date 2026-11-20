@@ -244,4 +244,6 @@ Dates refer to the linked scoring implementation or evaluation protocol.
 
 ## 🤝 Contributing
 
-Add a row under the task your resource addresses and link to a primary source. For a method, identify the program it writes. For a benchmark, describe what gets checked after execution. For a dataset, give the counting unit and describe one sample. Link the release month to a dated primary source. For interactive systems, describe what a designer can inspect or edit.
+Papers, datasets, tools, and corrections are welcome. See [How to open a pull request](how-to-PR.md) for entry formats and a worked example.
+
+This collection is available under the [MIT License](LICENSE). Linked papers, datasets, and software carry their own terms.
