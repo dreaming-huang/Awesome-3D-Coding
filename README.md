@@ -10,7 +10,7 @@ Papers, benchmarks, and datasets on generating 3D content as editable code, from
   <a href="#evaluation-metrics"><img src="assets/nav-metrics.svg" alt="Metrics" height="30"></a>
 </p>
 
-<details>
+<details open>
 <summary><strong>🧭 Browse the full collection</strong></summary>
 
 - [3D Coding Benchmarks](#3d-coding-benchmarks)
